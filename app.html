@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VoidCube Client</title>
+    <link rel="stylesheet" href="./assets/css/main.css">
+</head>
+<body>
+    <div class="userInfo">
+        <h1 id="userName">Loading...</h1>
+        <img id="userPhoto" src="https://minotar.net/avatar/MHF_Steve/100.png" alt="">
+    </div>
+    <div class="leftNav">
+        
+        <div class="header">
+            <div class="cuadrado">
+                <div class="square especial">
+                    <div class="logo">
+                        <img src="./assets/logo.png" alt="">
+    
+                    </div>
+                </div>
+            </div>
+            <div id="botonDashboard" class="selected cuadrado ">
+                <div class="square">
+                    <img src="./assets/img/dashboard.svg" alt="">
+                </div>
+                <img src="./assets/img/dashboard.svg" alt="" class="brillo">
+            </div>
+            <div id="botonInstance" class="cuadrado">
+                <div class="square">
+                    <img src="./assets/img/plus.svg" alt="">
+                </div>
+                <img src="./assets/img/dashboard.svg" alt="" class="brillo">
+            </div>
+            
+            
+        </div>
+        <div class="bottom">
+            <div id="botonConfig" class="cuadrado">
+                <div class="square">
+                    <img src="./assets/img/settings.svg" alt="">
+                </div>
+                <img src="./assets/img/dashboard.svg" alt="" class="brillo">
+            </div>
+            <div id="logout" class="cuadrado">
+                <div class="square">
+                    <img src="./assets/img/logout.svg" alt="">
+                </div>
+                <img src="./assets/img/dashboard.svg" alt="" class="brillo">
+            </div>
+        </div>
+    </div>
+    <div class="main">
+        <section id="dashboardSection" class="active seccion dashboard ">
+            <img src="./assets/img/letras.png" alt="">
+            <img class="brilloletras" src="./assets/img/brilloLetras.png" alt="">
+        </section>
+        <section id="configSection" class="seccion config">
+            <div class="contenedorInstances">
+                <h1>Configuracion</h1>
+                <label for="">Memoria de Arranque</label>
+                <input type="text">
+                <button class="instanceCreate">Guardar Ajustes</button>
+            </div>
+        </section>
+        <section id="createSectionInstance" class="seccion createInstance">
+            <div class="contenedorInstances">
+                <h1>Crear Instancia</h1>
+                <label for="">Nombre Instancia</label>
+                <input type="text">
+                <h3>Instancias Disponibles</h3>
+                <div class="bioHazard">
+                    <img src="./assets/img/logoBiohazard.png" alt="">
+                </div>
+                <button class="instanceCreate">Crear Instancia</button>
+            </div>
+        </section>
+    </div>
+    <script src="./scripts/logout.js"></script>
+    <script src="./scripts/app.js"></script>
+</body>
+</html>
